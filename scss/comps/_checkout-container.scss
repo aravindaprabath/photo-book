@@ -29,14 +29,13 @@
 
 .text-info {
   text-align: center;
-  margin-top: 2em;
+  padding: 2em;
 
   @media only screen and (min-width: 768px) {
     text-align: left;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2em;
     padding-right: 4em;
     margin-top: 0em;
   }
@@ -52,7 +51,7 @@
     flex: 1;
     margin-top: 0em;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
     margin-right: 2em;
     padding: 0;
   }
