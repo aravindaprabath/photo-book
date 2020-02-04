@@ -1,0 +1,15 @@
+.splash-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  color: white;
+
+  &__logo {
+    img {
+      width: 19em;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.status-bar {
+  width: auto;
+  height: 50px;
+  background-color: #9164c8;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1em;
+  color: white;
+
+  &__logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    img {
+      width: 11em;
+      @media only screen and (min-width: 1024px) {
+        width: 8em;
+      }
+    }
+  }
+
+  &__status {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 0.9em;
+  }
+}

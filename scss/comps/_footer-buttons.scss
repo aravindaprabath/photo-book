@@ -1,0 +1,72 @@
+.footer-buttons {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 2fr;
+  position: relative;
+  z-index: 9;
+  max-height: 140px;
+  padding: 10px 0px;
+
+  @media only screen and (min-width: 1024px) {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    max-height: 70px;
+  }
+
+  &__nav-bar {
+    width: 100%;
+    height: 70px;
+    background-color: #9164c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 0.5em;
+    }
+
+    @media only screen and (min-width: 1024px) {
+      justify-content: flex-start;
+    }
+  }
+
+  &__checkout-bar {
+    width: 100%;
+    height: 70px;
+    background-color: #9164c8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    @media only screen and (min-width: 1024px) {
+      justify-content: flex-end;
+    }
+  }
+}
+
+.yellow-button {
+  background-color: #ffcc38;
+  border-radius: 50px;
+  width: 16em;
+  height: 3em;
+  font-family: "Poppins", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 1.2em;
+  font-weight: 600;
+  border-style: none;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+  @media only screen and (min-width: 1024px) {
+    margin-right: 0.5em;
+    width: 14em;
+    height: 2.5em;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
